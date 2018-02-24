@@ -1,0 +1,5 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Run script on remote machine
+      script: /tmp/script.sh
