@@ -17,7 +17,7 @@ read -p "Please enter the passwd of remote VM: " PASSWD
 # This line will create ansible client on remote VM
 echo " 
 useradd ansible 
-echo “redhat” | passwd --stdin ansible 
+echo redhat | passwd --stdin ansible 
 sed  "/ans/d"  /etc/sudoers -i  
 echo "'"ansible  ALL=(ALL)       NOPASSWD: ALL"'" >> /etc/sudoers
 " > template.sh
